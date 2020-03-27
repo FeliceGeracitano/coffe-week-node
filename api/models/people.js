@@ -34,7 +34,7 @@ const nonEgPeople = new Array(5).fill(undefined).map(_ => {
   return {
     name: { first, last },
     location: faker.address.city(),
-    department: faker.commerce.department,
+    department: faker.commerce.department().toLowerCase(),
     motto: faker.lorem.sentence(6),
     email: `${first.toLowerCase()}.${last.toLowerCase()}@utmost.co`,
     phone: faker.phone.phoneNumberFormat(0),
